@@ -1,0 +1,2 @@
+#/bin/bash
+sudo apt-get -qq -y --no-install-recommends install git build-essential libpng-dev libsdl2-mixer-dev libgme-dev gettext ccache wget gcc upx openssh-client libopenmpt-dev libcurl4-openssl-dev; git clone https://github.com/STJr/SRB2.git; LIBGME_CFLAGS=-I/usr/include LIBGME_LDFLAGS=-lgme make -C SRB2/src LINUX=1 WARNINGMODE=1 CCACHE=1 NONX86=1 -k -j4
